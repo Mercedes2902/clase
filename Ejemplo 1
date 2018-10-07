@@ -1,0 +1,31 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main() {
+     map <int,int> mymap;
+     mymap[1] = 0;   mymap[2] = 31;    mymap[3] = 59;     mymap[4] = 90;
+     mymap[5] = 120; mymap[6] = 151;   mymap[7] = 181;    mymap[8] = 212;
+     mymap[9] = 243; mymap[10] = 273;  mymap[11] = 304;   mymap[12] = 334;
+
+     int d,m,a,dt;
+
+     cout << "Dia: ";
+     cin >> d;
+     cout << "Mes: ";
+     cin >> m;
+     cout << "año: ";
+     cin >> a;
+
+    dt = int mymap.find(m);
+
+    if (m >= 3 && a%4 == 0)
+
+        dt+=1;
+    dt = dt + (d-1);
+
+    cout << "Deben pasar" << dt << "días para que llegue tu cumpleaños";
+
+
+     return 0;
+}
