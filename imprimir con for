@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    //int a;
+    //cin >> a;
+
+    for(int i = 1; i <= 7; i++)
+        cout << "UTEC \n";
+    return 0;
+}
