@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+void potencia(int *ptr, int n){
+    *ptr = pow(*ptr,n);
+    cout << *ptr;
+}
+int main() {
+
+    int x;
+    int pot;
+
+    cout << "Ingrese x: ";
+    cin >> x;
+
+    cout << "\nIngrese exponente: ";
+    cin >> pot;
+
+    potencia(&x, pot);
+    cout << "\npotencia: " << x;
+    return 0;
+}
