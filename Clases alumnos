@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+class Alumno{
+private:
+    string nombre;
+    string apellido;
+    string direccion;
+    int edad;
+public:
+    Alumno(string,string,string,int);
+    void Nombre();
+    void Apellido();
+    void Direccion();
+    void Edad();
+};
+Alumno::Alumno(string _nom, string _ape, string _direc, int _edad) {
+    nombre = _nom;
+    apellido = _ape;
+    direccion = _direc;
+    edad = _edad;
+}
+void Alumno::Nombre(){
+    string nom;
+    cout <<"Ingrese nombre: "<<endl;
+    cin >> nom;
+
+}
+void Alumno::Apellido(){
+    string ape;
+    cout << "Ingrese apellido: "<<endl;
+    cin >> ape;
+}
+void Alumno::Direccion(){
+    string direc;
+    cout << "Ingrese direccion: "<<endl;
+    cin >> direc;
+}
+void Alumno::Edad(){
+    int x;
+    cout << "Ingrese edad: "<< endl;
+    cin >> x;
+}
+int main() {
+    Alumno a1 = Alumno("","","",0);
+    a1.Nombre();
+    a1.Apellido();
+    a1.Direccion();
+    a1.Edad();
+    return 0;
+}
